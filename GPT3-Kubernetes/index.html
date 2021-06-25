@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>K8S Service</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+
+    <script src="https://kit.fontawesome.com/1edca5e833.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon/favicon.ico">
+</head>
+<main>
+        <section id="landing-page" class="landing-page">
+            <div class="container">
+                <div class="main-message">
+			<h2>Kubernetes</h2><br>
+		    <h3>Just tell your requirement</h3>
+		    <input style="font-size: 20px; height: 50px; width: 600px; align: left" id="inp">
+                    <pre>
+			<br>
+			<div style="font-size: 15px; text-align: center;" id="d1">Output will be displayed here.</div>
+			</pre>
+			<button onclick="lw();">Click Me</button>
+
+                </div>
+            </div>
+	</section>
+       
+</main>
+<footer>
+        <div class="footer-nav">
+            <a href="#landing-page" class="footer-nav-link">This service can have all functionalities of Docker</a>
+        </div>
+        <div class="footer-coded-by">
+            <p>
+                <i class="fas fa-code"></i> with 💙 by Tirth Patel &copy; 2021
+            </p>
+            <p>Built with pure HTML, CSS and JavaScript</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.linkedin.com/in/tirupatel/" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/tiru-patel" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="https://twitter.com/TirthPa30981563" target="_blank"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+
+<script>
+        function lw(){
+                var i = document.getElementById("inp").value
+                var xhr = new XMLHttpRequest();
+                xhr.open("GET", "http://localhost/cgi-bin/gptpredict.py?x="+i,true)
+                xhr.send();
+
+                // output
+                xhr.onload = function() {
+                var output = xhr.responseText;
+                document.getElementById("d1").innerHTML = output;
+                }
+        }
+
+</script>
