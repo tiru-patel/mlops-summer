@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="keywords" content="INTUITIVE">
+  <meta name="description" content="">
+  <meta name="page_type" content="np-template-header-footer-from-plugin">
+  <title>Page 1</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='nicepage.css') }}" media="screen">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" media="screen">
+  <script class="u-script" type="text/javascript" href="{{ url_for('static', filename='jquery.js') }}"
+    defer=""></script>
+  <script class="u-script" type="text/javascript" href="{{ url_for('static', filename='nicepage.js') }}"
+    defer=""></script>
+  <meta name="generator" content="Nicepage 3.18.2, nicepage.com">
+  <link id="u-theme-google-font" rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i">
+
+
+  <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+  <meta name="theme-color" content="#478ac9">
+  <meta property="og:title" content="Page 1">
+  <meta property="og:type" content="website">
+</head>
+
+<body class="u-body">
+  <section class="u-align-center u-clearfix u-image u-shading u-section-1" src="" data-image-width="150"
+    data-image-height="84" id="sec-fe8f">
+    <div class="u-clearfix u-sheet u-sheet-1">
+      <p class="u-large-text u-text u-text-variant u-text-1">Upload any video of the vehicle whose number plate is
+        visible and get the details of the vehicle.</p>
+      <h1 class="u-text u-text-default u-title u-text-2">CARFETCHER</h1>
+      <div class="u-form u-form-1">
+        <form action="/cardetails" enctype="multipart/form-data" method="POST"
+          class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="custom"
+          name="form">
+          <div class="u-form-group u-form-name">
+            <label for="name-6797" class="u-form-control-hidden u-label">Name</label>
+            <input type="text" placeholder="Name" id="name-6797" name="name"
+              class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
+          </div>
+          <div class="u-form-email u-form-group">
+            <input type="file" placeholder="Email" id="email-6797" name="file"
+              class="u-border-1 u-border-grey-30 u-input u-input-rectangle" required="">
+          </div>
+          <div class="u-form-agree u-form-group u-form-group-3">
+            <input type="checkbox" id="agree-26a4" name="agree" class="u-agree-checkbox" required="">
+            <label for="agree-26a4" class="u-label">I accept the <a href="#">Terms of Service</a>
+            </label>
+          </div>
+          <div class="u-align-left u-form-group u-form-submit">
+
+            <input type="submit" value="Submit">
+
+          </div>
+          <div class="u-form-send-message u-form-send-success">Thank you! Your message has been sent.</div>
+          <div class="u-form-send-error u-form-send-message">Unable to send your message. Please fix errors then try
+            again.</div>
+          <input type="hidden" value="" name="recaptchaResponse">
+        </form>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

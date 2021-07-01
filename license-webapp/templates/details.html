@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link href="main.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <script src="https://kit.fontawesome.com/1edca5e833.js" crossorigin="anonymous"></script>
+  <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+</head>
+
+<body>
+  <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+      <h3 class="masthead-brand">CARFETCHER</h3>
+      <nav class="nav nav-masthead justify-content-center">
+        <h1 style="font-size:2.5rem;color:green">Information about vehicle in video provided is below </h1><br>
+        <br>
+
+      </nav>
+    </header>
+  </div>
+  <br>
+
+  <h3 style="color:blue;display:inline;">Vehile : </h3>
+  <h3 style="display:inline">{{ carDesc }}</h3><br>
+  <h3 style="color:blue;display:inline;">Model : </h3>
+  <h3 style="display:inline">{{ carModel }}</h3>
+
+  <hr>
+
+  {% for key, value in vehInfo.items() %}
+  <h3 style="color:blue;display:inline;">{{ key }} : </h3>
+  <h3 style="display:inline;">{{ value }}</h3><br>
+  {% endfor %}
+  <br>
+  <hr>
+
+</body>
+
+</html>
